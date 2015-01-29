@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>cosyModal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+	font:normal 13px Verdana, Geneva, sans-serif;
+	color:#333; background:#FFF;
+}
+pre{
+	margin:10px 0px; padding:10px;
+	background-color:#F5F5F5;
+	border:1px solid #DDD;
+	white-space:pre-wrap;
+	display:block;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" media="all" href="jquery.cosyModal.css" />
+<!--
+<link rel="stylesheet" type="text/css" media="all" href="jquery.cosyModal.min.css" />
+-->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.cosyModal.js"></script>
+<!--
+<script type="text/javascript" src="jquery.cosyModal.min.js"></script>
+-->
+</head>
+
+<body>
+
+<h1>cosyModal</h1>
+<p>...</p>
+<p>&nbsp;</p>
+
+<h2>Options</h2>
+<ul>
+	<li>
+	<p><code>width</code></p>
+	<p>Fixed with for the modal window.</p>
+	</li>
+	
+	<li>
+	<p><code>height</code></p>
+	<p>Fixed height for the modal window.</p>
+	</li>
+	
+	<li>
+	<p><code>showTime</code></p>
+	<p>Time in milliseconds show animation will run.</p>
+	</li>
+	
+	<li>
+	<p><code>hideTime</code></p>
+	<p>Time in milliseconds hide animation will run.</p>
+	</li>
+</ul>
+<p>&nbsp;</p>
+
+<h2>Examples</h2>
+<ul>
+	<li>
+		<p>Modal 1 (<a href="javascript:void(0);" onclick="$('#modal-1').cosyModal('show');">show</a>)</p>
+		<!--
+		<pre><code>
+		&lt;div id="modal-1"&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque fringilla massa, sed vehicula nulla elementum ut. Nulla facilisi. Proin rutrum placerat faucibus. Phasellus metus diam, luctus vel orci vel, tempor suscipit nulla. Phasellus eget vulputate dui, lacinia mattis metus. Quisque id justo ullamcorper, congue dui a, consequat ante. Suspendisse.&lt;/p&gt;
+		&lt;/div&gt;
+		
+		$('#modal-1').cosyModal();
+		
+		&lt;a href="javascript:void(0);" onclick="$('#modal-1').cosyModal('show');"&gt;Show modal 1&lt;/a&gt;
+		</code></pre>
+		-->
+		<div id="modal-1">
+			<h1>Modal 1</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque fringilla massa, sed vehicula nulla elementum ut. Nulla facilisi. Proin rutrum placerat faucibus. Phasellus metus diam, luctus vel orci vel, tempor suscipit nulla. Phasellus eget vulputate dui, lacinia mattis metus. Quisque id justo ullamcorper, congue dui a, consequat ante. Suspendisse.</p>
+		</div>
+		<script type="text/javascript">
+		$('#modal-1').cosyModal();
+		</script>
+	</li>
+	
+	<li>
+		<p>Modal 2 (<a href="javascript:void(0);" onclick="$('#modal-2').cosyModal('show');">show</a>)</p>
+		<!--
+		<pre><code>
+		&lt;div id="modal-2"&gt;&lt;/div&gt;
+		
+		$('#modal-2').cosyModal();
+		
+		&lt;a href="javascript:void(0);" onclick="$('#modal-2').cosyModal('show');"&gt;Show modal 2&lt;/a&gt;
+		</code></pre>
+		-->
+		<div id="modal-2">
+			<h1>Modal 2</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque fringilla massa, sed vehicula nulla elementum ut. Nulla facilisi. Proin rutrum placerat faucibus. Phasellus metus diam, luctus vel orci vel, tempor suscipit nulla. Phasellus eget vulputate dui, lacinia mattis metus. Quisque id justo ullamcorper, congue dui a, consequat ante. Suspendisse.</p>
+		</div>
+		<script type="text/javascript">
+		$('#modal-2').cosyModal();
+		</script>
+	</li>
+	
+	<li>
+		<p>Modal 3 (<a href="javascript:void(0);" onclick="$('#modal-3').cosyModal('show');">show</a>)</p>
+		<!--
+		<pre><code>
+		&lt;div id="modal-3"&gt;&lt;/div&gt;
+		
+		$('#modal-3').cosyModal({
+			width : 600,
+			height : 400
+		});
+		
+		&lt;a href="javascript:void(0);" onclick="$('#modal-3').cosyModal('show');"&gt;Show modal 3&lt;/a&gt;
+		</code></pre>
+		-->
+		<div id="modal-3">
+			<h1>Modal 3</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque fringilla massa, sed vehicula nulla elementum ut. Nulla facilisi. Proin rutrum placerat faucibus. Phasellus metus diam, luctus vel orci vel, tempor suscipit nulla. Phasellus eget vulputate dui, lacinia mattis metus. Quisque id justo ullamcorper, congue dui a, consequat ante. Suspendisse.</p>
+		</div>
+		<script type="text/javascript">
+		$('#modal-3').cosyModal();
+		</script>
+	</li>
+	
+	<li>
+		<p>Modal 4 (<a href="javascript:void(0);" onclick="$('#modal-4').cosyModal('show');">show</a>)</p>
+		<!--
+		<pre><code>
+		&lt;div id="modal-4"&gt;&lt;/div&gt;
+		
+		$('#modal-4').cosyModal({
+			width : 600,
+			height : 400,
+			showTime : 1000,
+			hideTime : 1500
+		});
+		
+		&lt;a href="javascript:void(0);" onclick="$('#modal-4').cosyModal('show');"&gt;Show modal 4&lt;/a&gt;
+		</code></pre>
+		-->
+		<div id="modal-4">
+			<h1>Modal 4</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque fringilla massa, sed vehicula nulla elementum ut. Nulla facilisi. Proin rutrum placerat faucibus. Phasellus metus diam, luctus vel orci vel, tempor suscipit nulla. Phasellus eget vulputate dui, lacinia mattis metus. Quisque id justo ullamcorper, congue dui a, consequat ante. Suspendisse.</p>
+		</div>
+		<script type="text/javascript">
+		$('#modal-4').cosyModal();
+		</script>
+	</li>
+	
+	<li>
+		<p>Modal 5 (<a href="#modal-5" rel="cosyModal:show">show</a>)</p>
+		<!--
+		<pre><code>
+		&lt;div id="modal-5"&gt;
+			&lt;div class="header"&gt;
+				Modal 5
+			&lt;/div&gt;
+			&lt;div class="body"&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque fringilla massa, sed vehicula nulla elementum ut. Nulla facilisi. Proin rutrum placerat faucibus. Phasellus metus diam, luctus vel orci vel, tempor suscipit nulla. Phasellus eget vulputate dui, lacinia mattis metus. Quisque id justo ullamcorper, congue dui a, consequat ante. Suspendisse.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;a href="#modal-5" rel="cosyModal:show"&gt;Show modal 5&lt;/a&gt;
+		</code></pre>
+		-->
+		<div id="modal-5">
+			<h1>Modal 5</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque fringilla massa, sed vehicula nulla elementum ut. Nulla facilisi. Proin rutrum placerat faucibus. Phasellus metus diam, luctus vel orci vel, tempor suscipit nulla. Phasellus eget vulputate dui, lacinia mattis metus. Quisque id justo ullamcorper, congue dui a, consequat ante. Suspendisse.</p>
+		</div>
+	</li>
+</ul>
+
+</body>
+
+</html>
